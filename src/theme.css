@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/Poppins/poppins-regular-webfont.woff") format("woff"), url("./fonts/Poppins/poppins-regular-webfont.woff2") format("woff2"), url("./fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("./fonts/Poppins/poppins-semibold-webfont.woff") format("woff"), url("./fonts/Poppins/poppins-semibold-webfont.woff2") format("woff2"), url("./fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
+}
+
+html {
+  font-size: 18px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: #606F81;
+  background: #E5E5E5;
+}
+
+.container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 1364px;
+  background: #ffffff;
+  background: url("./assets/background.png") no-repeat center center;
+  margin-top: 1rem;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #384758;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  width: 486px;
+  height: 20px;
+  margin-left: 469px;
+  margin-top: 0;
+}
+
+.subheader {
+  width: 432px;
+  height: 60px;
+  margin-left: 485px;
+  margin-top: 47px;
+  padding-top: 3px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 27px;
+  color: #606F81;
+  text-align: center;
+}
+
+.control {
+  width: 115px;
+  height: 48px;
+  margin-left: 645px;
+  margin-top: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.control .arrow_left {
+  width: 48px;
+  height: 48px;
+  margin-left: 0;
+  margin-top: 0;
+  background: url("./assets/arrow-left.png") no-repeat center center;
+  cursor: pointer;
+}
+
+.control .arrow_right {
+  width: 48px;
+  height: 48px;
+  margin-left: 0;
+  margin-top: 0;
+  background: url("./assets/arrow-right.png") no-repeat center center;
+  margin-left: 19px;
+  cursor: pointer;
+}
+
+.inner {
+  width: 1296px;
+  height: 400px;
+  margin-left: 61px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 1s ease-in-out 0.2s;
+  transition: -webkit-transform 1s ease-in-out 0.2s;
+  transition: transform 1s ease-in-out 0.2s;
+  transition: transform 1s ease-in-out 0.2s, -webkit-transform 1s ease-in-out 0.2s;
+}
+
+.step_slider {
+  width: 290px;
+  height: 400px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 34px;
+}
+
+.step_slider .step_avatar {
+  width: 290px;
+  height: 320px;
+  margin-left: 0;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.step_slider .step_avatar img {
+  width: 290px;
+  height: 315px;
+}
+
+.step_slider .step_name {
+  width: 290px;
+  height: 36px;
+  margin-left: 0;
+  margin-top: 17px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #384758;
+}
+
+.step_slider .step_company {
+  width: 290px;
+  height: 27px;
+  margin-left: 0;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 27px;
+  color: #606F81;
+}
+
+.step_avatar.active {
+  border-bottom: 5px solid #FE8700;
+  -webkit-transform: rotate(0.2deg);
+          transform: rotate(0.2deg);
+}
+
+.step_name.active, .step_company.active {
+  color: #FE8700;
+}
+
+.posts {
+  width: 960px;
+  height: 522px;
+  margin-left: 385px;
+  margin-top: 50px;
+}
+
+.posts .posts_header {
+  width: 960px;
+  height: 78px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #384758;
+}
+
+.posts .posts_inner {
+  width: 960px;
+  height: 417px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.post {
+  width: 960px;
+  height: 119px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.post .post_header {
+  width: 960px;
+  height: 28px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #384758;
+}
+
+.post .post_text {
+  width: 960px;
+  height: 84px;
+  margin-left: 0;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #606F81;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #606F81;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #606F81), color-stop(42%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #606F81 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #606F81;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.loader:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=theme.css.map */

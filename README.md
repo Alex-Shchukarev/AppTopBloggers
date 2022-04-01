@@ -1,24 +1,3 @@
-# module3
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+### Deploy project with Firebase service
 See [project](https://ibs-task.web.app/).
+![image](https://user-images.githubusercontent.com/78414390/161240732-e52b00f3-c97d-483e-839b-d1c8a2ff20d0.png)
